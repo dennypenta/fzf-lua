@@ -1155,11 +1155,6 @@ live_grep                                             *fzf-lua-opts-live_grep*
 Search for strings/regexes using `rg`, `grep` or any other compatible grep'er
 binary (e.g. `ag`).
 
-Unlike `grep` which uses a fixed search string/regex each keypress generates a
-new underlying grep command with the prompt input text, this can be more
-performant on large monorepos to narrow down the result set before switching
-to fuzzy matching with `ctrl-g` for further refinement.
-
 
                                                                               
 live_grep_native                               *fzf-lua-opts-live_grep_native*

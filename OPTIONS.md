@@ -862,6 +862,10 @@ Search for strings/regexes using `rg`, `grep` or any other compatible grep'er bi
 
 Unlike `grep` which uses a fixed search string/regex each keypress generates a new underlying grep command with the prompt input text, this can be more performant on large monorepos to narrow down the result set before switching to fuzzy matching with `ctrl-g` for further refinement.
 
+`search_paths` is an option to provide a root directory to
+the grep implementation, for example:
+`:lua FzfLua live_grep search_paths=/the/projects/sub/folder`
+
 #### live_grep_native
 
 Performant "live" grep variant piping the underlying command directly to fzf (without any processing by fzf-lua), disables all the bells and whistles (icons, path manipulation, etc).
